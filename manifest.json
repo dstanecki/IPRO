@@ -1,0 +1,16 @@
+{
+    "name": "DARL Fake News Scanner",
+    "version": "1.0",
+    "manifest_version": 3,
+
+    "description": "Fake News Finding Extension",
+    "icons": {
+        "128": "logo.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+      },
+    
+      "permissions": ["storage"]
+  }
