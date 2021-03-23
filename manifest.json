@@ -3,7 +3,7 @@
     "version": "1.0",
     "manifest_version": 3,
 
-    "description": "Fake News Finding Extension",
+    "description": "This extension looks for posts pertaining to COVID-19 and checks to see if posts are from a credible source. The extension tags all mentions of COVID-19 with an information tag, a verification tag or warning tag.",
     "icons": {
         "128": "logo.png"
     },
@@ -12,5 +12,13 @@
         "service_worker": "background.js"
       },
     
-      "permissions": ["storage"]
+      "permissions": ["storage"],
+
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "all_frames": true,
+          "js": ["contentScript.js"]
+        }
+      ]
   }
