@@ -10,13 +10,14 @@
 
     "background": {
         "service_worker": "background.js"
+		"scripts": ["background.js"]
       },
     
       "permissions": ["storage"],
 
     "content_scripts": [
         {
-          "matches": ["https://facebook.com/*"],
+          "matches": ["*://*/*"],
           "all_frames": true,
           "js": ["contentScript.js"]
         }
