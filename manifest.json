@@ -4,12 +4,17 @@
     "manifest_version": 3,
 
     "description": "This extension looks for posts pertaining to COVID-19 and checks to see if posts are from a credible source. The extension tags all mentions of COVID-19 with an information tag, a verification tag or warning tag.",
+    
     "icons": {
         "128": "logo.png"
     },
 
     "background": {
         "service_worker": "background.js"
+      },
+
+      "action":{
+        "default_popup": "popup.html"
       },
     
       "permissions": ["storage"],
