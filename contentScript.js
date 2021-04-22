@@ -6,7 +6,7 @@ let text = document.createTextNode('TAG');
 
 for(let i = 0; i < words.length; i++){
     if(words[i].innerHTML.includes('COVID-19')|| words[i].innerHTML.includes('covid-19')){
-       // words[i].innerHTML = words[i].innerHTML.replace('COVID-19', 'THIS WORKS');
+       words[i].innerHTML = words[i].innerHTML.replace('COVID-19', 'THIS WORKS');
        div.appendChild(text);
     } else if(words[i].innerHTML.includes('COVID19') || words[i].innerHTML.includes('covid19') || words[i].innerHTML.includes('Covid19')){
         div.appendChild(text);
