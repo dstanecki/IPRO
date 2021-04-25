@@ -3,11 +3,14 @@ const words = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li, td, capt
 let div = document.createElement('div');
 div.id = 'tag';
 let text = document.createTextNode('TAG');
+const aLink = [];
 
 for(let i = 0; i < words.length; i++){
     if(words[i].innerHTML.includes('COVID-19')|| words[i].innerHTML.includes('covid-19')){
        words[i].innerHTML = words[i].innerHTML.replace('COVID-19', 'THIS WORKS');
        div.appendChild(text);
+       let youtubeID = replace.split( '/' ).slice(-1)[0];
+       aLink.push( '<div class="video-wrapper"><iframe src="https://www.youtube.com/embed/' + youtubeID + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>' )
     } else if(words[i].innerHTML.includes('COVID19') || words[i].innerHTML.includes('covid19') || words[i].innerHTML.includes('Covid19')){
         div.appendChild(text);
     } else if(words[i].innerHTML.includes('Coronavirus') || words[i].innerHTML.includes('coronavirus') || words[i].innerHTML.includes('Corona Virus') || words[i].innerHTML.includes('Corona virus') || words[i].innerHTML.includes('corona virus')){
