@@ -5,7 +5,7 @@ div.id = 'tag';
 let text = document.createTextNode('TAG');
 for(let i = 0; i < words.length; i++){
     if(words[i].innerHTML.includes('COVID-19')|| words[i].innerHTML.includes('covid-19')){
-       words[i].innerHTML = words[i].innerHTML.replace('COVID-19', '<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">THIS WORKS</a>');
+       words[i].innerHTML = words[i].innerHTML.replace('COVID-19', '<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">THIS WORKS<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.clipartmax.com%2Fpng%2Fmiddle%2F122-1226130_small-light-bulb-png.png&imgrefurl=https%3A%2F%2Fwww.clipartmax.com%2Fmiddle%2Fm2i8N4i8m2A0Z5d3_small-light-bulb-png%2F&tbnid=MLZM4gliqJvcrM&vet=12ahUKEwi7zu7qhJvwAhUGfqwKHYPcDjcQMygAegUIARCzAQ..i&docid=JWTRr21ghXkd0M&w=840&h=677&q=small%20lightbulb%20clipart%20png&client=firefox-b-1-d&ved=2ahUKEwi7zu7qhJvwAhUGfqwKHYPcDjcQMygAegUIARCzAQ" alt="Covid Keyword"></a>');
        div.appendChild(text);
     } else if(words[i].innerHTML.includes('COVID19') || words[i].innerHTML.includes('covid19') || words[i].innerHTML.includes('Covid19')){
         div.appendChild(text);
